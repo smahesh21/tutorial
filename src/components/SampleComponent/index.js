@@ -1,20 +1,15 @@
 import {Component} from 'react'
 class SampleComponent extends Component {
-    constructor() {
-        super() 
-        this.state = {}
-    }
-    //
-    /* Comments  */
-    
+    state = {userInput:""}
+onClickDiv=(event) => {
+    this.setState({userInput:event.target.value})
+}
 
-    onClickDiv=(event) => {
-            this.setState({value:event.target.value})
-    }
-
-    render() {
-        return (
+render() {
+    return (
+        <div>
             <input type="text" onChange={this.onClickDiv} />
+        </div>
         )
     }
 }
