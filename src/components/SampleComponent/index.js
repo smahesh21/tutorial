@@ -1,6 +1,6 @@
 import {Component} from 'react'
 class SampleComponent extends Component {
-    state = {userInput:""}
+state = {userInput:""}
 onClickDiv=(event) => {
     this.setState({userInput:event.target.value})
 }
